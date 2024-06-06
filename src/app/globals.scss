@@ -1,0 +1,27 @@
+@import "./styles/index";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+  color: var(--clr-text-primary);
+  font-size: var(fz-md);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 1680px;
+  margin: 0 auto;
+}

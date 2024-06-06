@@ -1,0 +1,52 @@
+.container {
+  width: 100%;
+
+  .content {
+    padding: 24px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    .mavLists {
+      display: flex;
+      align-items: center;
+      gap: 76px;
+
+      .list {
+        position: relative;
+        display: inline-block;
+
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: -4px;
+          left: 0;
+          height: 4px;
+          background-color: var(--clr-primary);
+          width: 0;
+          transition: var(--transition-default);
+        }
+
+        &:hover::after {
+          width: 100%;
+        }
+      }
+    }
+
+    .icons {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 44px;
+
+      .searchBtn {
+        width: fit-content;
+      }
+
+      .iconLink {
+        width: fit-content;
+      }
+    }
+  }
+}
