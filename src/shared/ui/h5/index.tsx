@@ -12,7 +12,12 @@ export const H5 = (props: IProps) => {
   } = props;
   return (
     <h5
-      className={classNames(styles.content, className, styles[weight])}
+      className={classNames(
+        styles.content,
+        className,
+        styles[weight],
+        styles[color],
+      )}
       {...otherProps}
     >
       {children}

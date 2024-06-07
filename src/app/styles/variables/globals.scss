@@ -1,7 +1,13 @@
 :root {
   --clr-primary: rgb(184, 142, 47);
+  --clr-primary-hover: rgb(179, 137, 42);
+  --clr-primary-active: rgb(174, 132, 37);
   --clr-secondary: rgb(255, 243, 227);
+  --clr-secondary-hover: rgb(250, 238, 222);
+  --clr-secondary-active: rgb(245, 233, 217);
   --clr-white: rgb(255, 255, 255);
+  --clr-white-hover: rgb(240, 240, 240);
+  --clr-white-active: rgb(225, 225, 225);
   --clr-whiteSmoke: rgb(245, 245, 245);
   --clr-whiteSmoke-hover: rgb(240, 240, 240);
   --clr-whiteSmoke-active: rgb(235, 235, 235);
@@ -11,6 +17,8 @@
   --clr-darkGray: rgb(51, 51, 51);
   --clr-border: rgb(212, 212, 212);
   --clr-line: rgb(217, 217, 217);
+  --clr-transparent: rgba(255, 255, 255, 0);
+  --clr-discount: rgb(181, 236, 172);
 
   --clr-text-primary: var(--clr-darkGray);
   --clr-text-secondary: var(--clr-gray);
@@ -20,11 +28,19 @@
   --clr-text-white: var(--clr-white);
 
   --clr-bg-primary: var(--clr-secondary);
+  --clr-bg-primary-hover: var(--clr-secondary);
+  --clr-bg-primary-active: var(--clr-secondary);
   --clr-bg-secondary: var(--clr-line);
   --clr-bg-white: var(--clr-white);
+  --clr-bg-white-hover: var(--clr-white-hover);
+  --clr-bg-white-active: var(--clr-white-active);
   --clr-bg-whiteSmoke: var(--clr-whiteSmoke);
   --clr-bg-whiteSmoke-hover: var(--clr-whiteSmoke-hover);
   --clr-bg-whiteSmoke-active: var(--clr-whiteSmoke-active);
+  --clr-bg-accent: var(--clr-primary);
+  --clr-bg-accent-hover: var(--clr-primary-hover);
+  --clr-bg-accent-active: var(--clr-primary-active);
+  --clr-bg-product: rgba(0, 0, 0, 0.5);
 
   --fw-thin: 100;
   --fw-extralight: 200;
@@ -56,6 +72,16 @@
   --lh-4xl: auto;
   --lh-5xl: 65px;
 
+  --p-xs: 6px;
+  --p-sm: 14px;
+  --p-md: 17px;
+  --p-lg: 25px;
+
+  --p-top-main-desktop: 89px;
+  --p-top-main-mobile: 80px;
+
+  --p-y-banner: 34px;
+
   --transition-default: all .1s linear;
 
   --border-primary: 1px solid var(--clr-border);
@@ -71,4 +97,5 @@
   --r-full: 9999px;
 
   --z-nav: 2;
+  --z-header: 3;
 }

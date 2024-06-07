@@ -9,4 +9,5 @@ export interface IProps
   size?: FontSize;
   weight?: FontWeight;
   color?: FontColor;
+  uppercase?: boolean;
 }

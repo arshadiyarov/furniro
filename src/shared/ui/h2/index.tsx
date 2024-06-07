@@ -12,7 +12,12 @@ export const H2 = (props: IProps) => {
   } = props;
   return (
     <h2
-      className={classNames(styles.content, className, styles[weight])}
+      className={classNames(
+        styles.content,
+        className,
+        styles[weight],
+        styles[color],
+      )}
       {...otherProps}
     >
       {children}

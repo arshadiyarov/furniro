@@ -9,6 +9,7 @@ export const P = (props: IProps) => {
     size = "md",
     weight = "normal",
     color = "FPrimary",
+    uppercase = false,
     ...otherProps
   } = props;
   return (
@@ -19,6 +20,7 @@ export const P = (props: IProps) => {
         styles[size],
         styles[weight],
         styles[color],
+        `${uppercase && "uppercase"}`,
       )}
       {...otherProps}
     >

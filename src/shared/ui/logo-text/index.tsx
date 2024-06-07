@@ -4,7 +4,7 @@ import { IProps } from "./props";
 
 export const LogoText = ({ width = 127, height = 28 }: IProps) => {
   return (
-    <Link href={"/"}>
+    <Link href={"/"} className={"w-fit"}>
       <Image
         src={"/img/utils/logo-text.svg"}
         alt={"Furniro"}

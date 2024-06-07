@@ -1,0 +1,11 @@
+.container {
+  padding: var(--p-y-banner) 0;
+
+  .photos {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+}

@@ -1,5 +1,10 @@
 .container {
+  position: fixed;
+  top: 0;
   width: 100%;
+  background-color: var(--clr-bg-white);
+  z-index: var(--z-header);
+  border-bottom: var(--border-line);
 
   .content {
     padding: 24px 0;
@@ -90,7 +95,7 @@
           transition: var(--transition-default);
         }
 
-        &:active svg{
+        &:active svg {
           fill: var(--clr-primary);
         }
       }

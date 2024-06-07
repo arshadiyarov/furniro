@@ -1,0 +1,26 @@
+.container {
+  padding: var(--p-y-banner) 0;
+  display: flex;
+  flex-direction: column;
+
+  .products {
+    width: 100%;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 32px;
+    overflow-x: auto;
+
+    @media (max-width: 1720px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    @media (max-width: 1024px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (max-width: 768px) {
+      grid-auto-flow: column;
+    }
+  }
+}

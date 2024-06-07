@@ -12,7 +12,12 @@ export const H3 = (props: IProps) => {
   } = props;
   return (
     <h3
-      className={classNames(styles.content, className, styles[weight])}
+      className={classNames(
+        styles.content,
+        className,
+        styles[weight],
+        styles[color],
+      )}
       {...otherProps}
     >
       {children}
