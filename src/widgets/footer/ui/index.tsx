@@ -28,30 +28,32 @@ export const Footer = (props: IProps) => {
               <P color={"lightGray"}>FL 33134 USA</P>
             </div>
           </div>
-          <ul className={styles.list}>
-            <li>
-              <P color={"lightGray"} weight={"medium"}>
-                Links
-              </P>
-            </li>
-            {navLinks.map((li, index) => (
-              <li key={index}>
-                <LinkBase href={li.href} name={li.name} />
+          <div className={styles.links}>
+            <ul className={styles.list}>
+              <li>
+                <P color={"lightGray"} weight={"medium"}>
+                  Links
+                </P>
               </li>
-            ))}
-          </ul>
-          <ul className={styles.list}>
-            <li>
-              <P color={"lightGray"} weight={"medium"}>
-                Help
-              </P>
-            </li>
-            {helpItems.map((li, index) => (
-              <li key={index}>
-                <LinkBase href={li} name={li} />
+              {navLinks.map((li, index) => (
+                <li key={index}>
+                  <LinkBase href={li.href} name={li.name} />
+                </li>
+              ))}
+            </ul>
+            <ul className={styles.list}>
+              <li>
+                <P color={"lightGray"} weight={"medium"}>
+                  Help
+                </P>
               </li>
-            ))}
-          </ul>
+              {helpItems.map((li, index) => (
+                <li key={index}>
+                  <LinkBase href={li} name={li} />
+                </li>
+              ))}
+            </ul>
+          </div>
           <div className={styles.subscribe}>
             <P color={"lightGray"} weight={"medium"}>
               Newsletter
@@ -63,7 +65,9 @@ export const Footer = (props: IProps) => {
           </div>
         </div>
         <div className={styles.line} />
-        <P color={"black"}>&copy;Funiro. All right reserved</P>
+        <P className={styles.copy} color={"black"}>
+          &copy;2024 Funiro. All right reserved
+        </P>
       </div>
     </footer>
   );

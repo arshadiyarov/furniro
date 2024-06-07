@@ -2,6 +2,9 @@
   --clr-primary: rgb(184, 142, 47);
   --clr-secondary: rgb(255, 243, 227);
   --clr-white: rgb(255, 255, 255);
+  --clr-whiteSmoke: rgb(245, 245, 245);
+  --clr-whiteSmoke-hover: rgb(240, 240, 240);
+  --clr-whiteSmoke-active: rgb(235, 235, 235);
   --clr-black: rgb(0, 0, 0);
   --clr-lightGray: rgb(159, 159, 159);
   --clr-gray: rgb(102, 102, 102);
@@ -17,6 +20,11 @@
   --clr-text-white: var(--clr-white);
 
   --clr-bg-primary: var(--clr-secondary);
+  --clr-bg-secondary: var(--clr-line);
+  --clr-bg-white: var(--clr-white);
+  --clr-bg-whiteSmoke: var(--clr-whiteSmoke);
+  --clr-bg-whiteSmoke-hover: var(--clr-whiteSmoke-hover);
+  --clr-bg-whiteSmoke-active: var(--clr-whiteSmoke-active);
 
   --fw-thin: 100;
   --fw-extralight: 200;
@@ -61,4 +69,6 @@
   --r-2xl: 16px;
   --r-3xl: 24px;
   --r-full: 9999px;
+
+  --z-nav: 2;
 }

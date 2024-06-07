@@ -13,31 +13,70 @@
       display: flex;
       align-items: flex-start;
       justify-content: space-between;
+      flex-wrap: wrap;
 
       .description {
         display: flex;
         flex-direction: column;
         gap: 50px;
+        margin-bottom: 28px;
+
+        @media (max-width: 787px) {
+          width: 100%;
+          text-align: center;
+          align-items: center;
+          justify-content: center;
+          gap: 24px;
+        }
       }
 
-      .list {
+      .links {
         display: flex;
-        flex-direction: column;
         align-items: flex-start;
-        gap: 44px;
+        gap: 144px;
+
+        @media (max-width: 732px) {
+          width: 100%;
+          justify-content: space-evenly;
+        }
+
+        .list {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 44px;
+
+          @media (max-width: 732px) {
+            gap: 28px;
+          }
+        }
       }
 
       .subscribe {
         display: flex;
         flex-direction: column;
+        justify-self: center;
         align-items: flex-start;
         gap: 40px;
+
+        @media (max-width: 732px) {
+          width: 100%;
+          align-items: center;
+          gap: 28px;
+          margin-top: 28px;
+        }
       }
     }
 
     .line {
       width: 100%;
       border-top: var(--border-line);
+    }
+
+    .copy {
+      @media (max-width: 787px) {
+        text-align: center;
+      }
     }
   }
 }
