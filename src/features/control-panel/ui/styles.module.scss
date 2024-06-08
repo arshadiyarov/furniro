@@ -1,0 +1,148 @@
+.container {
+  background-color: var(--clr-bg-primary);
+
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    svg {
+      transition: var(--transition-default);
+    }
+
+    &.active {
+      svg {
+        fill: var(--clr-primary);
+      }
+    }
+
+    &.hover {
+      p, svg {
+        transition: var(--transition-default);
+      }
+
+      &:hover {
+        p {
+          color: var(--clr-text-accent);
+        }
+
+        svg {
+          stroke: var(--clr-text-accent);
+          fill: var(--clr-text-accent);
+        }
+      }
+    }
+  }
+
+  .separator {
+    height: 37px;
+    border: 1px solid var(--clr-lightGray);
+  }
+
+  .contentDesktop {
+    padding: 24px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+
+    .left {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+
+      @media (max-width: 935px) {
+        gap: 16px;
+
+        p:last-child {
+          font-size: var(--fz-sm);
+        }
+      }
+    }
+
+    .right {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+
+      @media (max-width: 935px) {
+        gap: 16px;
+      }
+
+      .limit, .sort {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+        @media (max-width: 935px) {
+          gap: 8px;
+
+          p {
+            font-size: var(--fz-md);
+          }
+        }
+
+        select {
+          cursor: pointer;
+          padding: 8px 12px;
+          color: var(--clr-text-lightGray);
+          font-size: var(--fz-lg);
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          text-indent: 1px;
+          text-overflow: '';
+
+          @media (max-width: 935px) {
+            padding: 4px 8px;
+            font-size: var(--fz-md);
+          }
+        }
+      }
+
+      .limit {
+        select {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .contentMobile {
+    padding: 12px 0;
+    align-items: center;
+    justify-content: space-between;
+    display: none;
+
+    @media (max-width: 768px) {
+      display: flex;
+    }
+
+    @media (max-width: 425px) {
+      display: flex;
+      p {
+        font-size: var(--fz-md);
+      }
+
+      svg {
+        width: 20px;
+      }
+    }
+
+    .left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    @media (max-width: 324px) {
+      .separator {
+        display: none;
+      }
+    }
+  }
+}

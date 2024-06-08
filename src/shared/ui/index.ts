@@ -16,3 +16,4 @@ export { BannerTitle } from "./banner-title";
 export { PriceLineThrough } from "./price-line-through";
 export { DiscountBadge } from "./discount-badge";
 export { BlockTitle } from "./block-title";
+export { Breadcrumb } from "./breadcrumb";

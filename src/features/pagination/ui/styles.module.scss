@@ -1,0 +1,45 @@
+.content {
+  display: flex;
+  align-items: stretch;
+  gap: 16px;
+
+  @media (max-width: 426px) {
+    gap: 8px;
+  }
+
+  .btn {
+    position: relative;
+    width: 80px;
+    height: 50px;
+
+    &.page {
+      width: 50px;
+    }
+
+    p {
+      position: relative;
+    }
+
+    @media (max-width: 768px) {
+      width: 50px;
+      height: 40px;
+
+      p {
+        font-size: var(--fz-sm);
+      }
+
+      &.page {
+        width: 40px;
+      }
+    }
+
+    @media (max-width: 376px) {
+      width: 45px;
+      height: 35px;
+
+      &.page {
+        width: 35px;
+      }
+    }
+  }
+}

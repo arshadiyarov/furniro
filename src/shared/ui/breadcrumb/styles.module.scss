@@ -1,0 +1,24 @@
+.content {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  .breadcrumbItem {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    .link {
+      transition: var(--transition-default);
+
+      &:hover {
+        color: var(--clr-text-black);
+      }
+
+      &.active {
+        font-weight: var(--fw-medium);
+        color: var(--clr-text-black);
+      }
+    }
+  }
+}

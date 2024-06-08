@@ -11,25 +11,6 @@ import { useState } from "react";
 
 const iconItems = [
   {
-    name: "account-alert",
-    svg: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="28"
-        height="28"
-        fill="none"
-        viewBox="0 0 28 28"
-        className={styles.fill}
-      >
-        <path
-          fill="#000"
-          d="M23.334 14V8.167h2.333v7h-2.334m0 4.666h2.334V17.5h-2.334m-11.666-2.333c3.115 0 9.333 1.563 9.333 4.666v3.5H2.334v-3.5c0-3.103 6.218-4.666 9.333-4.666zm0-10.5a4.667 4.667 0 110 9.333 4.667 4.667 0 010-9.333zm0 12.716c-3.465 0-7.117 1.704-7.117 2.45v1.284h14.233v-1.284c0-.746-3.651-2.45-7.116-2.45zm0-10.5a2.45 2.45 0 100 4.9 2.45 2.45 0 000-4.9z"
-        ></path>
-      </svg>
-    ),
-    href: "/login",
-  },
-  {
     name: "heart",
     svg: (
       <svg
@@ -110,7 +91,7 @@ export const Header = (props: IProps) => {
           </ul>
         </nav>
         <div className={styles.icons}>
-          <button className={styles.searchBtn}>
+          <button>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="28"
@@ -127,12 +108,27 @@ export const Header = (props: IProps) => {
               ></path>
             </svg>
           </button>
+          <button>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="28"
+              height="28"
+              fill="none"
+              viewBox="0 0 28 28"
+              className={styles.fill}
+            >
+              <path
+                fill="#000"
+                d="M23.334 14V8.167h2.333v7h-2.334m0 4.666h2.334V17.5h-2.334m-11.666-2.333c3.115 0 9.333 1.563 9.333 4.666v3.5H2.334v-3.5c0-3.103 6.218-4.666 9.333-4.666zm0-10.5a4.667 4.667 0 110 9.333 4.667 4.667 0 010-9.333zm0 12.716c-3.465 0-7.117 1.704-7.117 2.45v1.284h14.233v-1.284c0-.746-3.651-2.45-7.116-2.45zm0-10.5a2.45 2.45 0 100 4.9 2.45 2.45 0 000-4.9z"
+              ></path>
+            </svg>
+          </button>
           {iconItems.map((ic, index) => (
             <Link key={ic.name} href={ic.href} className={styles.iconLink}>
               {ic.svg}
             </Link>
           ))}
-          <button className={styles.cartBtn}>
+          <button>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="28"

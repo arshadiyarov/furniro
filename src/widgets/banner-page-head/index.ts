@@ -1,0 +1,1 @@
+export { BannerPageHead } from "./ui";

@@ -1,10 +1,10 @@
 import styles from "./styles.module.scss";
 import { BannerPageHead } from "widgets/banner-page-head";
 
-export const Comparison = () => {
+export const Cart = () => {
   return (
     <main className={styles.container}>
-      <BannerPageHead title={"Product Comparison"} />
+      <BannerPageHead title={"Cart"} />
     </main>
   );
 };

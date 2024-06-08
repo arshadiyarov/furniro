@@ -7,14 +7,14 @@ import { BannerTitle, BlockTitle, Button, P } from "shared/ui";
 import { ProductCard } from "enteties/product";
 import { useRouter } from "next/navigation";
 
+const mockProducts = ["1", "2", "3", "4", "5", "6", "7", "8"];
+
 export const BannerProducts = (props: IProps) => {
   const router = useRouter();
 
   const handleRoute = (id: string) => {
     router.push(`/shop/${id}`);
   };
-
-  const mockProducts = ["1", "2", "3", "4", "5", "6", "7", "8"];
 
   return (
     <section className={classNames("wrapper", styles.container, "space-y-10")}>

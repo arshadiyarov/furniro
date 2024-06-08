@@ -1,7 +1,0 @@
-.container {
-  padding-top: var(--p-top-main-desktop);
-
-  @media (max-width: 640px) {
-    padding-top: var(--p-top-main-mobile);
-  }
-}

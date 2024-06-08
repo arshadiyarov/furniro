@@ -7,8 +7,19 @@
   .likeMobile {
     display: none;
     position: absolute;
-    top: 8px;
-    right: 8px;
+    top: 16px;
+    right: 12px;
+
+    @media (max-width: 768px) {
+      display: block;
+    }
+  }
+
+  .discountMobile {
+    display: none;
+    position: absolute;
+    top: 16px;
+    left: 12px;
 
     @media (max-width: 768px) {
       display: block;
@@ -70,10 +81,30 @@
   .info {
     padding: var(--p-md);
 
+    @media (max-width: 768px) {
+      .actualPrice {
+        font-size: var(--fz-md);
+      }
+
+      .description {
+        font-size: var(--fz-xs);
+      }
+
+      .name {
+        font-size: var(--fz-lg);
+      }
+    }
+
     .price {
       display: flex;
       align-items: center;
       gap: 8px;
+    }
+
+    .discountDesktop {
+      @media (max-width: 768px) {
+        display: none;
+      }
     }
   }
 }

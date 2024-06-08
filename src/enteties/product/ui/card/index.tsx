@@ -87,6 +87,9 @@ export const ProductCard = ({ handleRoute, id }: IProps) => {
           ></path>
         </svg>
       </button>
+      <div className={styles.discountMobile}>
+        <DiscountBadge discount={15} />
+      </div>
       <div className={styles.hoverContent}>
         <Button
           color={"clrSecondary"}
@@ -113,16 +116,18 @@ export const ProductCard = ({ handleRoute, id }: IProps) => {
         </div>
       </div>
       <div className={styles.info}>
-        <H5>Leviosa</H5>
-        <P weight={"medium"} color={"secondary"}>
+        <H5 className={styles.name}>Leviosa</H5>
+        <P weight={"medium"} color={"secondary"} className={styles.description}>
           Stylish cafe chair
         </P>
         <div className={styles.price}>
-          <P size={"lg"} weight={"semibold"}>
+          <P className={styles.actualPrice} size={"lg"} weight={"semibold"}>
             ${formatPrice(15.9)}
           </P>
           <PriceLineThrough price={19.2} />
-          <DiscountBadge discount={15} />
+          <div className={styles.discountDesktop}>
+            <DiscountBadge discount={15} />
+          </div>
         </div>
       </div>
     </div>

@@ -1,6 +1,10 @@
 import styles from "./styles.module.scss";
-import { IProps } from "./props";
+import { BannerPageHead } from "widgets/banner-page-head";
 
-export const Checkout = (props: IProps) => {
-  return <main className={styles.container}></main>;
+export const Checkout = () => {
+  return (
+    <main className={styles.container}>
+      <BannerPageHead title={"Checkout"} />
+    </main>
+  );
 };
