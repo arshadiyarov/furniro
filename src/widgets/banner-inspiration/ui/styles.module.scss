@@ -1,0 +1,32 @@
+.container {
+  background-color: var(--clr-bg-primary);
+  padding: var(--p-y-banner) 0;
+  overflow: hidden;
+
+  .content {
+    display: flex;
+    align-items: center;
+    gap: 44px;
+
+    .description {
+      padding: 24px;
+      border-radius: var(--r-lg);
+      background-color: var(--clr-bg-primary);
+      width: 35%;
+      z-index: 1;
+
+      button {
+        margin-top: 24px;
+      }
+    }
+
+    .right {
+
+      .sliderContainer {
+        width: 404px;
+        height: 582px;
+        margin: 0 auto;
+      }
+    }
+  }
+}

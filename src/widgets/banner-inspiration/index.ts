@@ -1,0 +1,1 @@
+export { BannerInspiration } from "./ui";

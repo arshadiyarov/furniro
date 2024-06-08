@@ -4,6 +4,17 @@
   width: 100%;
   cursor: pointer;
 
+  .likeMobile {
+    display: none;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    @media (max-width: 768px) {
+      display: block;
+    }
+  }
+
   &:hover {
     .hoverContent {
       opacity: 100%;
@@ -25,6 +36,10 @@
     gap: 24px;
     transition: var(--transition-default);
 
+    @media (max-width: 768px) {
+      display: none;
+    }
+
     .cartBtn {
       width: 70%;
     }
@@ -34,6 +49,17 @@
       display: flex;
       align-items: center;
       justify-content: space-around;
+
+      .btn {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+
+        &.like svg {
+          //fill: red;
+          //stroke: red;
+        }
+      }
     }
   }
 
